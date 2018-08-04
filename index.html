@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr-CH" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxius Psych</title>
+  </head>
+  <body>
+    <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's logo" height="64px" width="auto">
+
+    <p>
+      <span style="text-transform: uppercase; color: #bb0000; font-weight: bold;">Maxius Psych</span>
+      <br>
+      Film Director
+    </p>
+
+    <p>
+      <a href="tel:+41793990884">+41 79 399 08 84</a><br>
+      <a href="mailto:contact@maxiuspsych.ch">contact@maxiuspsych.ch</a>
+    </p>
+
+    <style media="screen">
+      body {
+        font-size: 20px;
+        font-family: 'URW Din', 'Helvetica Neue', sans-serif;
+        margin: 1em;
+        min-height: calc(100vh - 2em);
+        color: white;
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      a {
+        color: white;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min)
+        max = Math.floor(max)
+        return Math.floor(Math.random() * (max - min + 1)) + min
+      }
+
+      let imageNumber = getRandomIntInclusive(1,4)
+      if (imageNumber < 3) {
+        document.body.style.backgroundPosition = 'left center'
+      } else {
+        document.body.style.backgroundPosition = 'center'
+      }
+      document.body.style.backgroundImage = `url('/assets/img/${imageNumber}.jpeg')`
+    </script>
+  </body>
+</html>
