@@ -18,8 +18,18 @@
   </head>
   <body>
 
-    <a href="/">
-      <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's logo" height="64px" width="auto">
+    <a href="/" class="logo">
+      <picture>
+        <source
+          media="(max-width: 500px)"
+          srcset="/assets/img/maxiuspsych-logo.svg"
+          type="image/svg+xml">
+        <source
+          srcset="/assets/img/maxiuspsych-logo--large.svg"
+          type="image/svg+xml">
+
+        <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's Logo">
+      </picture>
     </a>
 
     <nav>
