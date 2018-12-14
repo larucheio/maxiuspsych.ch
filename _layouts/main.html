@@ -33,10 +33,10 @@
     </a>
 
     <nav>
-      <a href="/">NEWS</a>
-      <a href="/about">PRÉSENTATION</a>
-      <a href="/films">FILMS</a>
-      <a href="/contact">CONTACT</a>
+      <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
+      <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
+      <a href="/films" class="{% if '/films/' == page.url %}active{% endif %}">FILMS</a>
+      <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
     </nav>
 
     {{ content }}

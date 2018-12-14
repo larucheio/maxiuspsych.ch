@@ -30,6 +30,8 @@ nav {
   a {
     font-size: 2rem;
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    color: white;
   }
 
   a:not(:last-child)::after {
@@ -42,6 +44,7 @@ nav {
     background: transparent url('/assets/img/maxiuspsych-symbol.svg') no-repeat;
   }
 
+  a.active,
   a:hover,
   a:focus {
     color: #bb0000;
