@@ -35,7 +35,7 @@
     <nav>
       <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
       <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
-      <a href="/films" class="{% if '/films/' == page.url %}active{% endif %}">FILMS</a>
+      <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
       <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
     </nav>
 
