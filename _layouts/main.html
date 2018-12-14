@@ -25,29 +25,11 @@
         min-height: calc(100vh - 2em);
         color: white;
         background-color: black;
-        background-size: cover;
-        background-repeat: no-repeat;
       }
 
       a {
         color: white;
       }
     </style>
-
-    <script type="text/javascript">
-      function getRandomIntInclusive(min, max) {
-        min = Math.ceil(min)
-        max = Math.floor(max)
-        return Math.floor(Math.random() * (max - min + 1)) + min
-      }
-
-      let imageNumber = getRandomIntInclusive(1,4)
-      if (imageNumber < 3) {
-        document.body.style.backgroundPosition = 'left center'
-      } else {
-        document.body.style.backgroundPosition = 'center'
-      }
-      document.body.style.backgroundImage = `url('/assets/img/${imageNumber}.jpeg')`
-    </script>
   </body>
 </html>
