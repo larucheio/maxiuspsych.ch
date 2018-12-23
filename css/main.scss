@@ -10,7 +10,6 @@ body {
   min-height: calc(100vh - 2em);
   color: white;
   background-color: black;
-  max-width: 50rem;
 }
 
 a {
@@ -51,6 +50,11 @@ nav {
   a:focus {
     color: #bb0000;
   }
+}
+
+.content {
+  max-width: 50rem;
+  margin: auto;
 }
 
 .muted {

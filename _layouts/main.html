@@ -17,28 +17,29 @@
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
+    <div class="content">
+      <a href="/" class="logo">
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="/assets/img/maxiuspsych-logo.svg"
+            type="image/svg+xml">
+          <source
+            srcset="/assets/img/maxiuspsych-logo--large.svg"
+            type="image/svg+xml">
 
-    <a href="/" class="logo">
-      <picture>
-        <source
-          media="(max-width: 500px)"
-          srcset="/assets/img/maxiuspsych-logo.svg"
-          type="image/svg+xml">
-        <source
-          srcset="/assets/img/maxiuspsych-logo--large.svg"
-          type="image/svg+xml">
+          <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's Logo">
+        </picture>
+      </a>
 
-        <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's Logo">
-      </picture>
-    </a>
+      <nav>
+        <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
+        <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
+        <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
+        <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
+      </nav>
 
-    <nav>
-      <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
-      <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
-      <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
-      <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
-    </nav>
-
-    {{ content }}
+      {{ content }}
+    </div>
   </body>
 </html>
