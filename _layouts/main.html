@@ -15,6 +15,13 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="/css/main.css">
+
+    {% if page.url contains '/photographie/' %}
+      <link rel="stylesheet" href="/assets/vendors/photoswipe/photoswipe.css">
+      <link rel="stylesheet" href="/assets/vendors/photoswipe/default-skin/default-skin.css">
+      <script src="/assets/vendors/photoswipe/photoswipe.min.js"></script>
+      <script src="/assets/vendors/photoswipe/photoswipe-ui-default.min.js"></script>
+    {% endif %}
   </head>
   <body>
     <div class="content">
@@ -37,6 +44,7 @@
       <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
       <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
       <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
+      <a href="/photographie" class="{% if page.url contains '/photographie/' %}active{% endif %}">PHOTOGRAPHIE</a>
       <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
     </nav>
 

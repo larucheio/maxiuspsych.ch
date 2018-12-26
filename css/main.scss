@@ -71,3 +71,18 @@ nav {
 .w-100 {
   width: 100%;
 }
+
+.photo-gallery {
+  column-count: 1;
+  column-gap: 10px;
+}
+
+@media (min-width: 800px) {
+  .photo-gallery {
+    column-count: 2;
+  }
+}
+
+.thumbnail {
+  width: 100%;
+}

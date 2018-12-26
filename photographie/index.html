@@ -1,0 +1,28 @@
+---
+layout: main
+---
+
+<p>
+  <cite>Parce que la nature est l'essence de la vie qu'il faut parfois y retourner pour se rappeler qui nous sommes.</cite>
+</p>
+
+<!-- Gallery -->
+<div class="photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+  {% for image in site.data.photogalleries.photography.images %}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="/assets/img/photographie/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}">
+        <img src="/assets/img/photographie/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" />
+      </a>
+    </figure>
+  {% endfor %}
+
+</div>
+
+<style media="screen">
+  figure {
+    margin: 0;
+  }
+</style>
+
+{% include photoswipe.html %}
