@@ -16,7 +16,7 @@
 
     <link rel="stylesheet" href="/css/main.css">
 
-    {% if page.url contains '/photographie/' %}
+    {% if page.url contains '/photographies/' %}
       <link rel="stylesheet" href="/assets/vendors/photoswipe/photoswipe.css">
       <link rel="stylesheet" href="/assets/vendors/photoswipe/default-skin/default-skin.css">
       <script src="/assets/vendors/photoswipe/photoswipe.min.js"></script>
@@ -42,7 +42,7 @@
       <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
       <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
       <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
-      <a href="/photographie" class="{% if page.url contains '/photographie/' %}active{% endif %}">PHOTOGRAPHIE</a>
+      <a href="/photographies" class="{% if page.url contains '/photographies/' %}active{% endif %}">PHOTOGRAPHIES</a>
       <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
     </nav>
 

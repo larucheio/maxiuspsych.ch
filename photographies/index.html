@@ -11,8 +11,8 @@ layout: main
 
   {% for image in site.data.photogalleries.photography.images %}
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="/assets/img/photographie/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}">
-        <img src="/assets/img/photographie/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" />
+      <a href="/assets/img/photographies/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}">
+        <img src="/assets/img/photographies/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" />
       </a>
     </figure>
   {% endfor %}
