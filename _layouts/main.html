@@ -24,21 +24,19 @@
     {% endif %}
   </head>
   <body>
-    <div class="content">
-      <a href="/" class="logo">
-        <picture>
-          <source
-            media="(max-width: 500px)"
-            srcset="/assets/img/maxiuspsych-logo.svg"
-            type="image/svg+xml">
-          <source
-            srcset="/assets/img/maxiuspsych-logo--large.svg"
-            type="image/svg+xml">
+    <a href="/" class="logo">
+      <picture>
+        <source
+          media="(max-width: 500px)"
+          srcset="/assets/img/maxiuspsych-logo.svg"
+          type="image/svg+xml">
+        <source
+          srcset="/assets/img/maxiuspsych-logo--large.svg"
+          type="image/svg+xml">
 
-          <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's Logo">
-        </picture>
-      </a>
-    </div>
+        <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's Logo">
+      </picture>
+    </a>
 
     <nav>
       <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
@@ -48,8 +46,6 @@
       <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
     </nav>
 
-    <main class="content">
-      {{ content }}
-    </main>
+    {{ content }}
   </body>
 </html>

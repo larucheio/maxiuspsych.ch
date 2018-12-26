@@ -52,7 +52,7 @@ nav {
   }
 }
 
-.content {
+.boxed {
   max-width: 50rem;
 }
 
@@ -72,14 +72,20 @@ nav {
   width: 100%;
 }
 
-.photo-gallery {
+.photo-gallery--multi-column {
   column-count: 1;
   column-gap: 10px;
 }
 
 @media (min-width: 800px) {
-  .photo-gallery {
+  .photo-gallery--multi-column {
     column-count: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-gallery--multi-column {
+    column-count: 3;
   }
 }
 
