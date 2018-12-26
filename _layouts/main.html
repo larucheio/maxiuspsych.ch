@@ -31,15 +31,17 @@
           <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's Logo">
         </picture>
       </a>
-
-      <nav>
-        <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
-        <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
-        <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
-        <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
-      </nav>
-
-      {{ content }}
     </div>
+
+    <nav>
+      <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
+      <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
+      <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
+      <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
+    </nav>
+
+    <main class="content">
+      {{ content }}
+    </main>
   </body>
 </html>
