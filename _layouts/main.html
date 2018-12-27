@@ -38,13 +38,71 @@
       </picture>
     </a>
 
-    <nav>
+    <nav class="navigation">
       <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
       <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
       <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
       <a href="/photographies" class="{% if page.url contains '/photographies/' %}active{% endif %}">PHOTOGRAPHIES</a>
       <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
     </nav>
+
+    <div class="mobile-menu">
+      <div class="menu-toggle">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+      <span style="margin-left: 1rem; font-size: 2rem;">
+        {% if '/' == page.url %}NEWS{% endif %}
+        {% if '/about/' == page.url %}PRÉSENTATION{% endif %}
+        {% if page.url contains '/films/' %}FILMS{% endif %}
+        {% if '/photographies/' == page.url %}PHOTOGRAPHIES{% endif %}
+        {% if '/contact/' == page.url %}CONTACT{% endif %}
+      </span>
+    </div>
+
+    <div class="mobile-navigation">
+      <div class="close">
+        X
+      </div>
+      <img src="/assets/img/maxiuspsych-logo.svg" alt="Maxius Psych's Logo" width="100px">
+      <nav>
+        <a href="/" class="{% if '/' == page.url %}active{% endif %}">NEWS</a>
+        <a href="/about" class="{% if '/about/' == page.url %}active{% endif %}">PRÉSENTATION</a>
+        <a href="/films" class="{% if page.url contains '/films/' %}active{% endif %}">FILMS</a>
+        <a href="/photographies" class="{% if page.url contains '/photographies/' %}active{% endif %}">PHOTOGRAPHIES</a>
+        <a href="/contact" class="{% if '/contact/' == page.url %}active{% endif %}">CONTACT</a>
+      </nav>
+    </div>
+
+    <script>
+      function toggleClass (el, className) {
+        // Toggle class
+        if (el.classList) {
+          el.classList.toggle(className);
+        } else {
+          var classes = el.className.split(' ');
+          var existingIndex = classes.indexOf(className);
+
+          if (existingIndex >= 0)
+            classes.splice(existingIndex, 1);
+          else
+            classes.push(className);
+
+          el.className = classes.join(' ');
+        }
+      }
+
+      let menuButton = document.getElementsByClassName('menu-toggle')[0]
+      let closeButton = document.getElementsByClassName('close')[0]
+      let mobileNavigation = document.getElementsByClassName('mobile-navigation')[0]
+      menuButton.addEventListener('click', function () {
+        toggleClass(mobileNavigation, 'on')
+      })
+      closeButton.addEventListener('click', function () {
+        toggleClass(mobileNavigation, 'on')
+      })
+    </script>
 
     {{ content }}
   </body>

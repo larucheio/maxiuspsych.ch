@@ -28,7 +28,9 @@ figure {
   margin: 0;
 }
 
-nav {
+.navigation {
+
+  display: none;
 
   margin-bottom: 2rem;
 
@@ -53,6 +55,12 @@ nav {
   a:hover,
   a:focus {
     color: #bb0000;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navigation {
+    display: block;
   }
 }
 
@@ -97,7 +105,83 @@ nav {
   width: 100%;
 }
 
-
 .exergue {
   color: #bb0000;
+}
+
+.menu-toggle {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  // position: absolute;
+  // top: 20px;
+  // right: 25px;
+  cursor: pointer;
+}
+
+.one,
+.two,
+.three{
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 6px auto;
+  backface-visibility: hidden;
+}
+
+.mobile-navigation {
+  display: none;
+}
+
+.mobile-navigation.on {
+  display: block;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,1);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mobile-navigation {
+
+  .close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    color: white;
+    margin-bottom: .5rem;
+  }
+
+  a.active,
+  a:hover,
+  a:focus {
+    font-weight: bold;
+    color: #bb0000;
+  }
+}
+
+.mobile-menu {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
 }
