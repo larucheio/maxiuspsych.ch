@@ -1,0 +1,88 @@
+---
+layout: main
+---
+
+<main>
+  <section class="boxed">
+    <a href="/films/" class="muted">← Voir la liste des films</a>
+
+    <h1 style="margin-bottom: 0;">De l'Autre Côté de la Rivière</h1>
+    <p style="margin-top: 0;">2019, Maxius Psych</p>
+    <video width="100%" poster="/assets/img/films/de-l-autre-cote-de-la-riviere.png" controls>
+      <source src="https://s3-eu-west-1.amazonaws.com/static.maxiuspsych.ch/DACR_VersionLongue.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section class="boxed">
+    <h2>Une Bouteille à la Terre</h2>
+    <p>
+      <span class="exergue">Titre du film</span> De l'Autre Côté de la Rivière<br/>
+      <span class="exergue">Année</span> 2019<br/>
+      <span class="exergue">Genre</span> Drame<br/>
+      <span class="exergue">Récompense</span> Prix du Scénario à l'Ecole de Cinéma de Genève<br/>
+      <span class="exergue">Budget du film</span> CHF 2'600.-<br>
+      <span class="exergue">Lieu de tournage</span> Nendaz (VS), Sion (VS), Versoix (GE)
+    </p>
+  </section>
+
+  <section class="boxed">
+    <h2>Synopsis</h2>
+    <p>
+      Elly, jeune femme fonctionnaire de 25 ans, décide de tout quitter et de partir faire un long voyage à pied dans les montagnes suisse pour se retrouver. En chemin, elle tombe sur Florence, jeune femme musicienne de 27 ans, qui fait aussi un voyage. Elles décident de faire un bout de chemin ensemble et apprennent à se connaître. Les sentiments grandissent et elles tombent amoureuses l'une de l'autre.
+      <br>
+      Seulement, un jour, alors que tout va bien, Florence annonce à Elly qu'elle doit partir, que son voyage s'arrête ici et ne lui donne aucune information. Elly, effondrée et ne comprenant pas son acte, fuit. Elle reçoit une explication par la mère de Florence quelques semaines plus tard.
+    </p>
+  </section>
+
+  <section class="boxed">
+    <h2>Casting</h2>
+    <p>
+      <span class="exergue">Elly</span> Talyssa Julliard<br/>
+      <span class="exergue">Florence</span> Marie-Camille Courvoisier<br/>
+      <span class="exergue">L'Homme du début</span> Christophe Hubleur<br/>
+      <span class="exergue">Sebastien (version longue)</span> Marcel Bourg<br/>
+      <span class="exergue">Hanna (version longue)</span> Morgane Herbez<br/>
+      <span class="exergue">Yadine (version longue)</span> Marc Marchon<br/>
+      <span class="exergue">Mère d'Elly</span> Leila Gruenhagel<br/>
+      <span class="exergue">Mère de Florence</span> Maxius Psych<br/>
+    </p>
+  </section>
+
+  <section class="boxed">
+    <h2>Équipe technique</h2>
+    <p>
+      <span class="exergue">Réalisatrices – Scénariste</span> Maxius Psych<br>
+      <span class="exergue">Assistante réalisatrice</span> Donatella Lamorgese<br>
+      <span class="exergue">Scripte</span> Yoann Schott<br>
+      <span class="exergue">Chef opérateur – Cadreur</span> Ferenc Csipke<br>
+      <span class="exergue">Assistant Cadre – Electro 1</span> Gaël Dupraz<br>
+      <span class="exergue">Assistant Cadre – Electro 2</span> Adrien Giannasi<br>
+      <span class="exergue">Ingénieur du son</span> Christophe Hubleur<br>
+      <span class="exergue">Accessoiriste</span> Marie-Camille Courvoisier<br>
+      <span class="exergue">Régisseur</span> Tim Bel<br>
+      <span class="exergue">Mixeur son</span> César Dyrberg<br>
+      <span class="exergue">Compositeur</span> Brian Bendahan<br>
+      <span class="exergue">Monteuse</span> Maxius Psych<br>
+      <span class="exergue">Remerciements</span> Leila Gruenhagel, Julien Gruenhagel, Rose Canepa, Ermano Zanetti, Paola Zanetti, Pascale Fuchs-Lamontre, Claude Lamorgese, Sonia Délèze, Christophe Praz, Famille Giannasi, Ville de Sion, Ville de Nendaz, Visuals, Ferenc Csipke, Pictura Somnia, Jacques Favres<br>
+    </p>
+  </section>
+
+  <section>
+    <h2>Photos du tournage</h2>
+
+    <!-- Gallery -->
+    <div class="photo-gallery photo-gallery--multi-column" itemscope itemtype="http://schema.org/ImageGallery">
+
+      {% for image in site.data.photogalleries.films.dacr.images %}
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="/assets/img/films/de-l-autre-cote-de-la-riviere/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}">
+            <img src="/assets/img/films/de-l-autre-cote-de-la-riviere/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" />
+          </a>
+        </figure>
+      {% endfor %}
+
+    </div>
+  </section>
+</main>
+
+{% include photoswipe.html %}
