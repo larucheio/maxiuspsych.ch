@@ -1,0 +1,85 @@
+images:
+  - name: sans-titre-1.png
+    width: '1701'
+    height: '1164'
+    title: 'Sans titre'
+    year: 2021
+    technique: 'Aquarelle sur papier'
+    size: '12.5x10.5 cm'
+  - name: desir.png
+    width: '1701'
+    height: '1425'
+    title: 'Désir'
+    year: 2020
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '60x50 cm'
+  - name: sans-titre-2.png
+    width: '1698'
+    height: '2414'
+    title: 'Sans titre'
+    year: 2020
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '50x70 cm'
+  - name: impression-amoureuse.png
+    width: '1701'
+    height: '2121'
+    title: 'Impression amoureuse'
+    year: 2020
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '24x30 cm'
+  - name: sans-titre-3.png
+    width: '1701'
+    height: '2110'
+    title: 'Sans titre'
+    year: 2020
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '40x50 cm'
+  - name: sans-titre-4.png
+    width: '1701'
+    height: '1223'
+    title: 'Sans titre'
+    year: 2020
+    technique: 'Acrylique sur toile'
+    size: '50x70 cm'
+  - name: sans-titre-5.png
+    width: '1701'
+    height: '2276'
+    title: 'Sans titre'
+    year: 2019
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '18x24 cm'
+  - name: sans-titre-6.png
+    width: '1701'
+    height: '2268'
+    title: 'Sans titre'
+    year: 2019
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '18x24 cm'
+  - name: sans-titre-7.png
+    width: '1701'
+    height: '2278'
+    title: 'Sans titre'
+    year: 2019
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '18x24 cm'
+  - name: sans-titre-8.png
+    width: '1701'
+    height: '2300'
+    title: 'Sans titre'
+    year: 2019
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '18x24 cm'
+  - name: sans-titre-9.png
+    width: '1701'
+    height: '2295'
+    title: 'Sans titre'
+    year: 2018
+    technique: 'Acrylique et aquarelle sur toile'
+    size: '18x24 cm'
+  - name: geometrie.png
+    width: '1701'
+    height: '2295'
+    title: 'Géométrie'
+    year: 2018
+    technique: 'Acrylique sur toile'
+    size: '18x24 cm'

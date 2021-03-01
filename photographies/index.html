@@ -12,7 +12,7 @@ layout: main
   {% for image in site.data.photogalleries.photography.images %}
     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
       <a href="/assets/img/photographies/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}">
-        <img src="/assets/img/photographies/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" />
+        <img src="/assets/img/photographies/thumbnails/{{ image.name }}" itemprop="thumbnail" class="thumbnail" loading="lazy" />
       </a>
     </figure>
   {% endfor %}

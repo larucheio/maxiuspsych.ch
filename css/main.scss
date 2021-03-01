@@ -28,6 +28,10 @@ figure {
   margin: 0;
 }
 
+.color-main {
+  color: #bb0000;
+}
+
 .navigation {
 
   display: none;
@@ -55,6 +59,16 @@ figure {
   a:hover,
   a:focus {
     color: #bb0000;
+  }
+}
+
+.peintures-gallery {
+  flex-direction: column;
+
+  figcaption {
+    align-self: flex-start;
+    text-align: left;
+    padding-top: 0 !important;
   }
 }
 
@@ -92,6 +106,16 @@ figure {
 @media (min-width: 800px) {
   .photo-gallery--multi-column {
     column-count: 2;
+  }
+
+  .peintures-gallery {
+    flex-direction: row;
+
+    figcaption {
+      align-self: flex-end;
+      text-align: right;
+      padding-top: 2rem;
+    }
   }
 }
 

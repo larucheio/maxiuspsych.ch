@@ -1,0 +1,41 @@
+---
+layout: main
+---
+
+<p class="boxed">
+  <cite>La peinture du psyché, l’émotion sur toile.</cite>
+</p>
+
+<p class="boxed">
+  <cite>
+    Mon sujet principal est l’âme humaine.
+    <br>
+    Mes techniques favorites sont l’acrylique, pour l’intensité de ses couleurs et son opacité, et l’aquarelle pour sa transparence.
+  </cite>
+</p>
+
+<!-- Gallery -->
+<div class="photo-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+  {% for image in site.data.photogalleries.peintures.images %}
+    <figure class="peintures-gallery" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" style="display: flex; margin-bottom: 5rem;">
+      <a href="/assets/img/peintures/{{ image.name }}" itemprop="contentUrl" data-size="{{ image.width }}x{{ image.height }}" style="flex: 1 1 50%; padding: 2rem;">
+        <img src="/assets/img/peintures/thumbnails/{{ image.name }}" alt="{{ image.title }}" itemprop="thumbnail" class="thumbnail" loading="lazy" />
+      </a>
+      <figcaption class="w-100" style="box-sizing: border-box; flex: 1 1 50%; padding: 2rem;">
+        <h1 class="color-main" style="font-size: 2rem;">{{ image.title }}</h1>
+        <p style="margin-top: 0;">
+          {{ image.year }}
+          <br>
+          {{ image.technique }}
+          <br>
+          {{ image.size }}
+        </p>
+        <hr style="margin-bottom: 0; margin-top: 1rem;">
+      </figcaption>
+    </figure>
+  {% endfor %}
+
+</div>
+
+{% include photoswipe.html %}
