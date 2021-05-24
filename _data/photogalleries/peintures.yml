@@ -1,4 +1,11 @@
 images:
+  - name: corps-allonge.jpg
+    width: '1362'
+    height: '1018'
+    title: 'Corps allongé'
+    year: 2021
+    technique: 'Acrylique sur toile'
+    size: '60x80 cm'
   - name: sans-titre-1.png
     width: '1701'
     height: '1164'
